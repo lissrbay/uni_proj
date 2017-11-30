@@ -9,12 +9,12 @@ print("Input list plz:")
 k = input().split()
 for i in k:
 	l.add_last(int(i))
+print("Input sum: ")
 v = int(input())
     
 def find_sum_of_pair(v):
     i = l._header._next
     j = l._trailer._prev
-    last_element = l.last()
     while j != i:
         if i._element + j._element == v:
             return Pair(i._element, j._element)
