@@ -3,7 +3,7 @@ import java.io.*;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class WordStat {
+public class WordStatIndex {
 	private static Map<String, Integer> dict = new LinkedHashMap<String, Integer>();
 	private static final String CHAR_BLACKLIST = "[^A-Za-zÀ-ßà-ÿ'’-]";
 	
