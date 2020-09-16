@@ -15,8 +15,7 @@ public class FNV {
             result ^= (int) string.charAt(i);
         }
     }
-    public Test() {}
-    public static int hash32(int sum, final String string) {
+    public static string hash32(int sum, final String string) {
     	if (sum == 0)
     		sum = FNV_INIT;
         final int len = string.length();
