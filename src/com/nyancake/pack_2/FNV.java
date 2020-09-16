@@ -11,7 +11,7 @@ public class FNV {
         final int len = string.length();
 
         for(int i = 0; i < len; i++) {
-        	result *= FNV_PRIME;
+        	result *= FNV_PRI;
             result ^= (int) string.charAt(i);
         }
     }
