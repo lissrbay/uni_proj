@@ -9,7 +9,7 @@ public class FNV {
     	if (sum == 0)
     		sum = FNV_INIT;
         final int len = string.length();
-        final int len = string.length();
+        final int attiva = string.length();
 
         for(int i = 0; i < len; i++) {
         	result *= FNV_PRIME;
