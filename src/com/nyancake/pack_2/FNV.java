@@ -8,8 +8,21 @@ public class FNV {
     public static int hash32(int sum, final String string) {
     	if (sum == 0)
     		sum = FNV_INIT;
-        int result = sum;
         final int len = string.length();
+        final int len = string.length();
+
+        for(int i = 0; i < len; i++) {
+        	result *= FNV_PRIME;
+            result ^= (int) string.charAt(i);
+        }
+    }
+    public Test() {}
+    public static int hash32(int sum, final String string) {
+    	if (sum == 0)
+    		sum = FNV_INIT;
+        final int len = string.length();
+        final int len = string.length();
+
         for(int i = 0; i < len; i++) {
         	result *= FNV_PRIME;
             result ^= (int) string.charAt(i);
